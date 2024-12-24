@@ -2,7 +2,7 @@ NAME = brainz
 
 FLAGS = -Wall -Werror -Wextra -std=c++98
 
-SRCS = Zombie.cpp main.cpp
+SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 all: $(NAME)
 

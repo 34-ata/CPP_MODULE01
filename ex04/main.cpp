@@ -5,7 +5,7 @@
 int replace(char **argv, std::string str)
 {
 	std::ofstream	stream;
-	int				a;
+	size_t			a;
 
 	stream.open((std::string(argv[1]) + ".replace").c_str());
 	if (!stream.is_open())
@@ -13,7 +13,7 @@ int replace(char **argv, std::string str)
 	for (size_t i = 0; i < str.size(); i++)
 	{
 		a = str.find(argv[2], i);
-		if (a != -1 && a == (int)i)
+		if (a != std::string::npos && a == i)
 		{
 			stream << argv[3];
 			i += std::string(argv[2]).size() - 1;

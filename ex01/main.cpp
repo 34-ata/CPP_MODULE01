@@ -1,7 +1,5 @@
 #include "Zombie.hpp"
 
-Zombie*	zombieHorde(int n, const std::string &name);
-
 int	main(void)
 {
 	int	count = 20;
